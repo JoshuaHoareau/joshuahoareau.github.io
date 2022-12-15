@@ -1,0 +1,54 @@
+body{
+    font-family: 'Rubik Mono One', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    background-color: rgb(212, 255, 251);
+    
+    
+}
+
+h1{
+    font-size: 8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#3c0968, #0518bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animation-titre 2s;
+}
+@keyframes animation-titre {
+ 0%{
+    opacity: 0;
+    transform: translateY(-150px) scale(0.5);
+    
+ }
+ 100%{
+    opacity: 1;
+    transform: translateY(0);
+ }
+}
+.first{
+    transform: translateX(-100vh);
+    animation: description-animation 1s ease-out 2s forwards;
+    
+}
+@keyframes description-animation{
+    0%{
+        transform:translateX(-100vw);
+        display:;
+    }
+    50%{
+        transform: scaleX(1);
+    }
+    80%{
+        transform: translateX(10vw) scaleX(0.5);
+        
+    }
+    100%{
+        transform: translateX(0) scaleX(1) ;
+    }
+}
